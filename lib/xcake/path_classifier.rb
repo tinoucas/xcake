@@ -5,9 +5,9 @@ module Xcake
   #
   class PathClassifier
     EXTENSION_MAPPINGS = {
-      PBXFrameworksBuildPhase: %w{.a .dylib .so .framework}.freeze,
+      PBXFrameworksBuildPhase: %w{.a .dylib .so .framework .xcframework}.freeze,
       PBXHeadersBuildPhase: %w{.h .hpp}.freeze,
-      PBXSourcesBuildPhase: %w{.c .m .mm .cpp .swift .xcdatamodeld}.freeze,
+      PBXSourcesBuildPhase: %w{.c .m .mm .cpp .swift .xcdatamodeld .intentdefinition .mlmodel}.freeze,
       PBXResourcesBuildPhase: %w{.xcassets}.freeze
     }.freeze
 
